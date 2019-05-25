@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>e-commerce site</title>
+
+  <!-- Owl Stylesheets -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <!--  -->
+  <!-- bootstrap css -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- font-awesome css -->
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  <!-- nav bar css -->
+  <link href="assets/css/navbar.css" rel="stylesheet">
+  <!-- main style css -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- responsive css -->
+  <link href="assets/css/responsive.css" rel="stylesheet">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="up">
+    <a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
+  </div>
+  <div class="wrapper">
+    <!-- ============================================================
+              # Top bar area start
+          ==============================================================-->
+    <div class="top-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="top-holder">
+              <!-- language select -->
+              <div class="h-title dropdown">
+                <a href="#" class="h-select" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="./assets/img/english.png" alt="Flag">
+                  <span>English</span> <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">
+                      <img src="./assets/img/english.png">
+                      <span>English</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./assets/img/french.png">
+                      <span>French</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="./assets/img/spanish.png">
+                      <span>Spanish</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="h-title currency dropdown">
+                <a href="#" class="h-select" class="dropdown-toggle" data-toggle="dropdown">
+                  USD<i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">USD</a>
+                  </li>
+                  <li><a href="#">INR</a>
+                  </li>
+                  <li><a href="#">GBP</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="h-title">
+                <a href="tel:+987123654">
+                  <i class="fa fa-phone"></i>+987 123
+                  654
+                </a>
+              </div>
+              <div class="h-title">
+                <a href="mailto:contact@support.com">
+                  <i class="fa fa-envelope"></i>contact@support.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <ul class="h-right">
+              <li><a href="./login.html"><i class="fa fa-lock"></i>Login</a></li>
+              <li><a href="./login.html"><i class="fa fa-user-plus"></i>Register</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================================
+              # Top bar area End
+          ==============================================================-->
+
+    <!-- ============================================================
+              # Header area start
+          ==============================================================-->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <h1 class="logo"><a href="index.html">
+                Placeholder
+                <!-- <img src="./assets/img/logo.png" alt="Logo"> -->
+              </a></h1>
+          </div>
+          <div class="col-sm-7">
+            <form class="search-form">
+              <input class="search" type="text">
+              <select id="category" class="category">
+                <option value="select" class="category">All Category</option>
+                <option value="select" class="category">Option 1</option>
+                <option value="select" class="category">Option 1</option>
+                <option value="select" class="category">Option 1</option>
+                <option value="select" class="category">Option 1</option>
+              </select>
+              <span class="arrow-down"><i class="fa fa-chevron-down"></i></span>
+              <button><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <div class="col-md-3">
+            <div class="top-cart-row">
+              <div class="wishlist-compare-holder">
+                <div class="wishlist">
+                  <a href="#">
+                    <i class="fa fa-heart"></i>
+                    Wishlist
+                    <span id="top-cart-wishlist-count" class="value">(0)</span>
+                  </a>
+                </div>
+                <div class="compare">
+                  <a href="#">
+                    <i class="fa fa-exchange"></i>
+                    Compare
+                    <span id="top-cart-compare-count" class="value">(0)</span>
+                  </a>
+                </div>
+              </div>
+              <div class="dropdown">
+                <a href="#" class=" dropdown-toggle cart-holder" data-toggle="dropdown">
+                  <div class="basket-item-count">
+                    <span class="cart-items-count">5</span>
+                    <img alt="cart" src="./assets/img/buy.png">
+                  </div>
+                  <div class="total-price-basket">
+                    <span class="lbl">Your Cart:<span class="total-price">
+                        <span>$</span><span>2500</span>
+                      </span></span>
+                  </div>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="arrow-top"></div>
+                  <div class="your-cart">
+
+                    <!-- single cart 1 -->
+                    <div class="cart">
+                      <a href="#" class="cart-img">
+                        <img src="./assets/img/product-image-inline-4.jpg" alt="product">
+                      </a>
+                      <a class="cart-content" href="#">
+                        <p class="title">Pullover Batwing Sleeve Zigzag</p>
+                        <p class="price">$500</p>
+                        <p class="qty">Quantiry: 2</p>
+
+                      </a>
+                      <button class="close-btn">
+                        <i class="fa fa-trash"></i>
+                      </button>
+                    </div>
+
+                    <!-- single cart 2 -->
+                    <div class="cart">
+                      <a href="#" class="cart-img">
+                        <img src="./assets/img/product-image-inline-5.jpg" alt="product">
+                      </a>
+                      <a class="cart-content" href="#">
+                        <p class="title">Pullover Batwing Sleeve Zigzag</p>
+                        <p class="price">$500</p>
+                        <p class="qty">Quantiry: 2</p>
+
+                      </a>
+                      <button class="close-btn">
+                        <i class="fa fa-trash"></i>
+                      </button>
+                    </div>
+
+                    <!-- single cart 3 -->
+                    <div class="cart">
+                      <a href="#" class="cart-img">
+                        <img src="./assets/img/product-image-inline-6.jpg" alt="product">
+                      </a>
+                      <a class="cart-content" href="#">
+                        <p class="title">Pullover Batwing Sleeve Zigzag</p>
+                        <p class="price">$500</p>
+                        <p class="qty">Quantiry: 1</p>
+
+                      </a>
+                      <button class="close-btn">
+                        <i class="fa fa-trash"></i>
+                      </button>
+                    </div>
+
+                    <!-- checkout  -->
+                    <div class="cart-total-price">
+                      <p class="price">Sub Total <span>$2500</span></p>
+                      <button class="btn-addtocart">CHECKOUT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ============================================================
+              # Header area start
+          ==============================================================-->
+
+
+    <!-- ============================================================
+              # Main menu area start
+          ==============================================================-->
+    <div class="header-nav">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <nav class="main-menu">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                  aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar top-bar"></span>
+                  <span class="icon-bar middle-bar"></span>
+                  <span class="icon-bar bottom-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <!-- <img class="logo logo-color" src="assets/img/logo-color.png" alt="logo"> -->
+                  PLACEHOLDER
+                </a>
+              </div>
+              <!--End navbar-header -->
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                  <li><a class="active" href="index.html">Home</a></li>
+                  <li><a href="category.html">Category</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Electronics<span
+                        class="caret"></span></a>
+                    <ul class="dropdown-menu container mega-menu">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-2 mega-menu-item">
+                          <h2 class="title">Laptops</h2>
+                          <ul class="links">
+                            <li><a href="#">Gaming</a></li>
+                            <li><a href="#">Laptop Skins</a></li>
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Dell</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                            <li><a href="#">Asus</a></li>
+                            <li><a href="#">Adapters</a></li>
+                            <li><a href="#">Batteries</a></li>
+                            <li><a href="#">Cooling Pads</a></li>
+                          </ul>
+                        </div>
+                        <!-- /.col -->
+
+                        <div class="col-xs-12 col-sm-12 col-md-2 mega-menu-item">
+                          <h2 class="title">Desktops</h2>
+                          <ul class="links">
+                            <li><a href="#">Routers &amp; Modems</a></li>
+                            <li><a href="#">CPUs, Processors</a></li>
+                            <li><a href="#">PC Gaming Store</a></li>
+                            <li><a href="#">Graphics Cards</a></li>
+                            <li><a href="#">Components</a></li>
+                            <li><a href="#">Webcam</a></li>
+                            <li><a href="#">Memory (RAM)</a></li>
+                            <li><a href="#">Motherboards</a></li>
+                            <li><a href="#">Keyboards</a></li>
+                            <li><a href="#">Headphones</a></li>
+                          </ul>
+                        </div>
+                        <!-- /.col -->
+
+                        <div class="col-xs-12 col-sm-12 col-md-2 mega-menu-item">
+                          <h2 class="title">Cameras</h2>
+                          <ul class="links">
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Binoculars</a></li>
+                            <li><a href="#">Telescopes</a></li>
+                            <li><a href="#">Camcorders</a></li>
+                            <li><a href="#">Digital</a></li>
+                            <li><a href="#">Film Cameras</a></li>
+                            <li><a href="#">Flashes</a></li>
+                            <li><a href="#">Lenses</a></li>
+                            <li><a href="#">Surveillance</a></li>
+                            <li><a href="#">Tripods</a></li>
+
+                          </ul>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-xs-12 col-sm-12 col-md-2 mega-menu-item">
+                          <h2 class="title">Mobile Phones</h2>
+                          <ul class="links">
+                            <li><a href="#">Apple</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            <li><a href="#">Lenovo</a></li>
+                            <li><a href="#">Motorola</a></li>
+                            <li><a href="#">LeEco</a></li>
+                            <li><a href="#">Asus</a></li>
+                            <li><a href="#">Acer</a></li>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Headphones</a></li>
+                            <li><a href="#">Memory Cards</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 mega-menu-item banner-image"> <img
+                            class="img-responsive" src="assets/img/mega-menu-banner.jpg" alt=""> </div>
+                        <!-- /.yamm-content -->
+                      </div>
+                    </ul>
+                  </li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages<span class="caret"></span></a>
+                    <ul class="dropdown-menu submenu">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="category.html">Category</a></li>
+                      <li><a href="product-detail.html">Detail</a></li>
+                      <li><a href="shopping-cart.html">Shopping Cart Summary</a></li>
+                      <li><a href="checkout.html">Checkout</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="blog-detail.html">Blog Detail</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="sign-in.html">Sign In</a></li>
+                      <li><a href="my-wishlist.html">Wishlist</a></li>
+                      <li><a href="terms-conditions.html">Terms and Condition</a></li>
+                      <li><a href="track-orders.html">Track Orders</a></li>
+                      <li><a href="product-comparison.html">Product-Comparison</a></li>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="404.html">404</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!--End navbar -->
+            </nav>
+          </div>
+          <!--End col -->
+        </div>
+        <!--End row -->
+      </div>
+      <!--End container -->
+    </div>
+    <!--End header-nav -->
+    <div class="nav-border-bottom"></div>
+
+    <!-- ============================================================
+              # Main Manu area End
+          ==============================================================-->
+
+
+    <!-- ============================================================
+            # breadcrumb area start
+        ==============================================================-->
+    <div class="breadcrumb">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="breadcrumb-inner">
+              <ul class="list-inline list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li class="active">Floral Print Buttoned</li>
+              </ul>
+            </div><!-- /.breadcrumb-inner -->
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </div>
+    <!-- ============================================================
+                  # breadcrumb area start
+              ==============================================================-->
+
+
+
+    <!-- ============================================================
+            # Product details view area start
+        ==============================================================-->
+    <div class="product-detail-view">
+      <div class="container">
+        <div class="row">
+          <!-- left -->
+          <div class="col-md-3">
+            <div class="information-blog-offer">
+              <!-- offer blog -->
+              <div class="offer-parcentage">
+                <h1>-40%</h1>
+                <h3>Winter Sale</h3>
+              </div>
+              <div class="description">
+                <p>Lorem ipsum dolor,consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="product-img">
+                <img src="./assets/img/offer-img1.jpg" alt="">
+              </div>
+              <div class="hot-bar">Hot</div>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="col-md-9">
+            <div class="product-detail-block">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="product-detail-viewer">
+                    <!-- main product view slide -->
+                    <div class="product-images-view-slide">
+                      <div class="p-image" data-hash="zero">
+                        <img src="./assets/img/products/p2.jpg" alt="">
+                      </div>
+                      <div class="p-image" data-hash="one">
+                        <img src="./assets/img/products/p3.jpg" alt="">
+                      </div>
+                      <div class="p-image" data-hash="two">
+                        <img src="./assets/img/products/p4.jpg" alt="">
+                      </div>
+                      <div class="p-image" data-hash="three">
+                        <img src="./assets/img/products/p5.jpg" alt="">
+                      </div>
+                      <div class="p-image" data-hash="four">
+                        <img src="./assets/img/products/p6.jpg" alt="">
+                      </div>
+                    </div>
+                    <!-- small product view slide -->
+                    <div class="product-slect-images-view-slide">
+                      <div class="s-p-image">
+                        <a href="#zero">
+                          <img src="./assets/img/products/p2.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="s-p-image">
+                        <a href="#one">
+                          <img src="./assets/img/products/p3.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="s-p-image">
+                        <a href="#two">
+                          <img src="./assets/img/products/p4.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="s-p-image">
+                        <a href="#three">
+                          <img src="./assets/img/products/p5.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="s-p-image">
+                        <a href="#four">
+                          <img src="./assets/img/products/p6.jpg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-7">
+                  <div class="product-info">
+                    <h1 class="name">Floral Print Buttoned</h1>
+
+                    <div class="rating-review">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <!-- Star rate -->
+                          <div class="star-holder inline">
+                            <div class="star" data-score="4" style="cursor: pointer; width: 80px;">
+                              <input type="hidden" name="score" value="5">
+                            </div>
+                          </div>
+                          <!-- end rate -->
+                        </div>
+                        <div class="col-sm-8">
+                          <div class="reviews">
+                            <a href="#" class="lnk">(13 Reviews)</a>
+                          </div>
+                        </div>
+                      </div><!-- /.row -->
+                    </div>
+
+
+
+                    <div class="stock-container">
+                      <div class="row">
+                        <div class="col-sm-2">
+                          <div class="stock-box">
+                            <span class="label">Availability :</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-9">
+                          <div class="stock-box">
+                            <span class="value">In Stock</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- /.stock-container -->
+
+                    <div class="description-container">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                      labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                      nisi ut aliquip ex ea commodo consequat.
+                    </div> <!-- description-container-->
+
+                    <div class="price-container">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="price-box">
+                            <span class="detail-price">$800.00</span>
+                            <span class="detail-price-strike">$900.00</span>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                          <div class="favorite-button">
+                            <a class="btn btn-primary" href="#">
+                              <i class="fa fa-heart"></i>
+                            </a>
+                            <a class="btn btn-primary" href="#">
+                              <i class="fa fa-signal"></i>
+                            </a>
+                            <a class="btn btn-primary" href="#">
+                              <i class="fa fa-envelope"></i>
+                            </a>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div> <!-- /.price-container-->
+
+                    <div class="quantity-container">
+                      <div class="row">
+                        <div class="col-sm-2">
+                          <span class="label">Qty :</span>
+                        </div>
+
+                        <div class="col-sm-2">
+                          <div class="cart-quantity">
+                            <div class="quant-input">
+                              <div class="arrows">
+                                <div class="arrow">
+                                  <span class="ir">
+                                    <i class="icon fa fa-sort-asc"></i>
+                                  </span>
+                                </div>
+                                <div class="arrow">
+                                  <span class="ir">
+                                    <i class="icon fa fa-sort-desc"></i>
+                                  </span>
+                                </div>
+                              </div>
+                              <input type="text" value="1">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="col-sm-7">
+                          <a href="#" class="btn-addtocart"><i class="fa fa-shopping-cart inner-right-vs"></i> ADD TO
+                            CART</a>
+                        </div>
+
+
+                      </div><!-- /.row -->
+                    </div>
+                  </div> <!-- /.product-info-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================================
+            # Product details view area End
+        ==============================================================-->
+
+
+
+
+
+    <!-- ============================================================
+            # Product description,comment,reviews tab start
+        ==============================================================-->
+    <div class="single-product-info-tab">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="tab-holder">
+              <!-- tab menu start -->
+              <ul class="tab-ul nav nav-tabs">
+                <li class="tab-item active">
+                  <a data-toggle="tab" data-toggle="tab" href="#description">Description</a>
+                </li>
+                <li class="tab-item">
+                  <a data-toggle="tab" href="#additional-info">Additional Information</a>
+                </li>
+                <li class="tab-item">
+                  <a data-toggle="tab" href="#reviews">Reviews (3)</a>
+                </li>
+              </ul><!-- tab menu start -->
+
+              <div class="tab-content">
+                <div class="tab-pane active" id="description">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sit amet porttitor eros. Praesent quis
+                    diam
+                    placerat, accumsan velit interdum, accumsan orci. Nunc libero sem, elementum in semper in,
+                    sollicitudin
+                    vitae dolor. Etiam sed tempus nisl. Integer vel diam nulla. Suspendisse et aliquam est. Nulla
+                    molestie
+                    ante et tortor sollicitudin, at elementum odio lobortis. Pellentesque neque enim, feugiat in elit
+                    sed,
+                    pharetra tempus metus. Pellentesque non lorem nunc. Pellentesque habitant morbi tristique senectus
+                    et
+                    netus et malesuada fames ac turpis egestas.</p>
+
+                  <p>Sed consequat orci vel rutrum blandit. Nam non leo vel risus cursus porta quis non nulla.
+                    Vestibulum
+                    vitae pellentesque nunc. In hac habitasse platea dictumst. Cras egestas, turpis a malesuada mollis,
+                    magna tortor scelerisque urna, in pellentesque diam tellus sit amet velit. Donec vel rhoncus nisi,
+                    eget
+                    placerat elit. Phasellus dignissim nisl vel lectus vehicula, eget vehicula nisl egestas. Duis
+                    pretium
+                    sed risus dapibus egestas. Nam lectus felis, sodales sit amet turpis se.</p>
+
+                  <div class="meta-row">
+                    <div class="inline">
+                      <label>SKU:</label>
+                      <span>54687621</span>
+                    </div><!-- /.inline -->
+
+                    <span class="seperator">/</span>
+
+                    <div class="inline">
+                      <label>categories:</label>
+                      <span><a href="#">-50% sale</a>,</span>
+                      <span><a href="#">gaming</a>,</span>
+                      <span><a href="#">desktop PC</a></span>
+                    </div><!-- /.inline -->
+
+                    <span class="seperator">/</span>
+
+                    <div class="inline">
+                      <label>tag:</label>
+                      <span><a href="#">fast</a>,</span>
+                      <span><a href="#">gaming</a>,</span>
+                      <span><a href="#">strong</a></span>
+                    </div><!-- /.inline -->
+                  </div><!-- /.meta-row -->
+                </div><!-- /.tab-pane #description -->
+
+                <div class="tab-pane" id="additional-info">
+                  <ul class="tabled-data">
+                    <li>
+                      <label>weight</label>
+                      <div class="value">7.25 kg</div>
+                    </li>
+                    <li>
+                      <label>dimensions</label>
+                      <div class="value">90x60x90 cm</div>
+                    </li>
+                    <li>
+                      <label>size</label>
+                      <div class="value">one size fits all</div>
+                    </li>
+                    <li>
+                      <label>color</label>
+                      <div class="value">white</div>
+                    </li>
+                    <li>
+                      <label>guarantee</label>
+                      <div class="value">5 years</div>
+                    </li>
+                  </ul><!-- /.tabled-data -->
+
+                  <div class="meta-row">
+                    <div class="inline">
+                      <label>SKU:</label>
+                      <span>54687621</span>
+                    </div><!-- /.inline -->
+
+                    <span class="seperator">/</span>
+
+                    <div class="inline">
+                      <label>categories:</label>
+                      <span><a href="#">-50% sale</a>,</span>
+                      <span><a href="#">gaming</a>,</span>
+                      <span><a href="#">desktop PC</a></span>
+                    </div><!-- /.inline -->
+
+                    <span class="seperator">/</span>
+
+                    <div class="inline">
+                      <label>tag:</label>
+                      <span><a href="#">fast</a>,</span>
+                      <span><a href="#">gaming</a>,</span>
+                      <span><a href="#">strong</a></span>
+                    </div><!-- /.inline -->
+                  </div><!-- /.meta-row -->
+                </div><!-- /.tab-pane #additional-info -->
+
+
+                <div class="tab-pane" id="reviews">
+                  <div class="comments">
+                    <div class="comment-item">
+                      <div class="row no-margin">
+                        <div class="col-lg-1 col-xs-12 col-sm-2 no-margin">
+                          <div class="avatar">
+                            <img alt="avatar" src="assets/img/default-avatar.jpg">
+                          </div><!-- /.avatar -->
+                        </div><!-- /.col -->
+
+                        <div class="col-xs-12 col-lg-11 col-sm-10 no-margin">
+                          <div class="comment-body">
+                            <div class="meta-info">
+                              <div class="author inline">
+                                <a href="#" class="bold">John Smith</a>
+                              </div>
+                              <!-- Star rate -->
+                              <div class="star-holder inline">
+                                <div class="star" data-score="4" style="cursor: pointer; width: 80px;">
+                                  <input type="hidden" name="score" value="5">
+                                </div>
+                              </div>
+                              <!-- end rate -->
+                              <div class="date inline pull-right">
+                                12.07.2013
+                              </div>
+                            </div><!-- /.meta-info -->
+                            <p class="comment-text">
+                              Integer id purus ultricies nunc tincidunt congue vitae nec felis. Vivamus sit amet nisl
+                              convallis, faucibus risus in, suscipit sapien. Vestibulum egestas interdum tellus id
+                              venenatis.
+                            </p><!-- /.comment-text -->
+                          </div><!-- /.comment-body -->
+
+                        </div><!-- /.col -->
+
+                      </div><!-- /.row -->
+                    </div><!-- /.comment-item -->
+
+                    <div class="comment-item">
+                      <div class="row no-margin">
+                        <div class="col-lg-1 col-xs-12 col-sm-2 no-margin">
+                          <div class="avatar">
+                            <img alt="avatar" src="assets/img/default-avatar.jpg">
+                          </div><!-- /.avatar -->
+                        </div><!-- /.col -->
+
+                        <div class="col-xs-12 col-lg-11 col-sm-10 no-margin">
+                          <div class="comment-body">
+                            <div class="meta-info">
+                              <div class="author inline">
+                                <a href="#" class="bold">Jane Smith</a>
+                              </div>
+                              <!-- Star rate -->
+                              <div class="star-holder inline">
+                                <div class="star" data-score="4" style="cursor: pointer; width: 80px;">
+                                  <input type="hidden" name="score" value="5">
+                                </div>
+                              </div>
+                              <!-- end rate -->
+                              <div class="date inline pull-right">
+                                12.07.2013
+                              </div>
+                            </div><!-- /.meta-info -->
+                            <p class="comment-text">
+                              Integer id purus ultricies nunc tincidunt congue vitae nec felis. Vivamus sit amet nisl
+                              convallis, faucibus risus in, suscipit sapien. Vestibulum egestas interdum tellus id
+                              venenatis.
+                            </p><!-- /.comment-text -->
+                          </div><!-- /.comment-body -->
+
+                        </div><!-- /.col -->
+
+                      </div><!-- /.row -->
+                    </div><!-- /.comment-item -->
+
+                    <div class="comment-item">
+                      <div class="row no-margin">
+                        <div class="col-lg-1 col-xs-12 col-sm-2 no-margin">
+                          <div class="avatar">
+                            <img alt="avatar" src="assets/img/default-avatar.jpg">
+                          </div><!-- /.avatar -->
+                        </div><!-- /.col -->
+
+                        <div class="col-xs-12 col-lg-11 col-sm-10 no-margin">
+                          <div class="comment-body">
+                            <div class="meta-info">
+                              <div class="author inline">
+                                <a href="#" class="bold">John Doe</a>
+                              </div>
+                              <!-- Star rate -->
+                              <div class="star-holder inline">
+                                <div class="star" data-score="4" style="cursor: pointer; width: 80px;">
+                                  <input type="hidden" name="score" value="5">
+                                </div>
+                              </div>
+                              <!-- end rate -->
+                              <div class="date inline pull-right">
+                                12.07.2013
+                              </div>
+                            </div><!-- /.meta-info -->
+                            <p class="comment-text">
+                              Integer id purus ultricies nunc tincidunt congue vitae nec felis. Vivamus sit amet nisl
+                              convallis, faucibus risus in, suscipit sapien. Vestibulum egestas interdum tellus id
+                              venenatis.
+                            </p><!-- /.comment-text -->
+                          </div><!-- /.comment-body -->
+
+                        </div><!-- /.col -->
+
+                      </div><!-- /.row -->
+                    </div><!-- /.comment-item -->
+                  </div><!-- /.comments -->
+
+                  <div class="add-review row">
+                    <div class="col-sm-8 col-xs-12">
+                      <div class="new-review-form">
+                        <h2>Add review</h2>
+                        <form id="contact-form" class="contact-form" method="post">
+                          <div class="row field-row">
+                            <div class="col-xs-12 col-sm-6">
+                              <label>name<span class="asterisk">
+                                  <i class="fa fa-asterisk"></i>
+                                </span></label>
+                              <input class="le-input">
+                            </div>
+                            <div class="col-xs-12 col-sm-6">
+                              <label>email<span class="asterisk">
+                                  <i class="fa fa-asterisk"></i>
+                                </span></label>
+                              <input class="le-input">
+                            </div>
+                          </div><!-- /.field-row -->
+
+                          <div class="field-row star-row">
+                            <label>your rating</label>
+                            <!-- Star rate -->
+                            <div class="star-holder inline">
+                              <div class="star" data-score="4" style="cursor: pointer; width: 80px;">
+                                <input type="hidden" name="score" value="5">
+                              </div>
+                            </div>
+                            <!-- end rate -->
+                          </div><!-- /.field-row -->
+
+                          <div class="field-row">
+                            <label>your review</label>
+                            <textarea rows="8" class="le-input"></textarea>
+                          </div><!-- /.field-row -->
+
+                          <div class="buttons-holder">
+                            <button type="submit" class="le-button huge">submit</button>
+                          </div><!-- /.buttons-holder -->
+                        </form><!-- /.contact-form -->
+                      </div><!-- /.new-review-form -->
+                    </div><!-- /.col -->
+                  </div><!-- /.add-review -->
+
+                </div><!-- /.tab-pane #reviews -->
+              </div><!-- /.tab-content -->
+
+            </div><!-- /.tab-holder -->
+          </div>
+        </div>
+      </div><!-- /.container -->
+    </div>
+    <!-- ============================================================
+      # product description,comment,reviews tab end
+      ==============================================================-->
+
+
+
+
+
+
+
+    <!-- ============================================================
+        # Recent Products start
+        ==============================================================-->
+    <div class="recent-product-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="recent-view">
+              <h1 class="section-title">Recently Viewed</h1>
+              <div class="recent-slider">
+                <div class="product-item">
+                  <div class="ribbon blue"><span>new!</span></div>
+                  <div class="product-inner">
+                    <a href="./product-detail.html">
+                      <div class="product-img">
+                        <img width="246" height="186" src="./assets/img/products/product-bag-1.jpg" alt="Product Image">
+                      </div>
+                      <div class="title-area">
+                        <h2>Floral Print Buttoned</h2>
+                        <div class="product-brand">Acer</div>
+                      </div>
+                      <div class="price-holder">
+                        <del>£ 1399.99</del>
+                        <span>£ 1199.99</span>
+                      </div>
+                    </a>
+                    <div class="hover-area">
+                      <div class="hover-content">
+                        <a href="./product-detail.html" class="gold">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <a href="./wishlist.html">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <a href="./product-compare.html">
+                          <i class="fa fa-exchange"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="ribbon blue"><span>new!</span></div>
+                  <div class="product-inner">
+                    <a href="./product-detail.html">
+                      <div class="product-img">
+                        <img width="246" height="186" src="./assets/img/products/product-bag-2.jpg" alt="Product Image">
+                      </div>
+                      <div class="title-area">
+                        <h2>Floral Print Buttoned</h2>
+                        <div class="product-brand">Acer</div>
+                      </div>
+                      <div class="price-holder">
+                        <del>£ 1399.99</del>
+                        <span>£ 1199.99</span>
+                      </div>
+                    </a>
+                    <div class="hover-area">
+                      <div class="hover-content">
+                        <a href="./product-detail.html" class="gold">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <a href="./wishlist.html">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <a href="./product-compare.html">
+                          <i class="fa fa-exchange"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="ribbon blue"><span>new!</span></div>
+                  <div class="product-inner">
+                    <a href="./product-detail.html">
+                      <div class="product-img">
+                        <img width="246" height="186" src="./assets/img/products/product-bag-3.jpg" alt="Product Image">
+                      </div>
+                      <div class="title-area">
+                        <h2>Floral Print Buttoned</h2>
+                        <div class="product-brand">Acer</div>
+                      </div>
+                      <div class="price-holder">
+                        <del>£ 1399.99</del>
+                        <span>£ 1199.99</span>
+                      </div>
+                    </a>
+                    <div class="hover-area">
+                      <div class="hover-content">
+                        <a href="./product-detail.html" class="gold">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <a href="./wishlist.html">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <a href="./product-compare.html">
+                          <i class="fa fa-exchange"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="ribbon blue"><span>new!</span></div>
+                  <div class="product-inner">
+                    <a href="./product-detail.html">
+                      <div class="product-img">
+                        <img width="246" height="186" src="./assets/img/products/product-bag-4.jpg" alt="Product Image">
+                      </div>
+                      <div class="title-area">
+                        <h2>Floral Print Buttoned</h2>
+                        <div class="product-brand">Acer</div>
+                      </div>
+                      <div class="price-holder">
+                        <del>£ 1399.99</del>
+                        <span>£ 1199.99</span>
+                      </div>
+                    </a>
+                    <div class="hover-area">
+                      <div class="hover-content">
+                        <a href="./product-detail.html" class="gold">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <a href="./wishlist.html">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <a href="./product-compare.html">
+                          <i class="fa fa-exchange"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="ribbon blue"><span>new!</span></div>
+                  <div class="product-inner">
+                    <a href="./product-detail.html">
+                      <div class="product-img">
+                        <img width="246" height="186" src="./assets/img/products/p2.jpg" alt="Product Image">
+                      </div>
+                      <div class="title-area">
+                        <h2>Floral Print Buttoned</h2>
+                        <div class="product-brand">Acer</div>
+                      </div>
+                      <div class="price-holder">
+                        <del>£ 1399.99</del>
+                        <span>£ 1199.99</span>
+                      </div>
+                    </a>
+                    <div class="hover-area">
+                      <div class="hover-content">
+                        <a href="./product-detail.html" class="gold">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <a href="./wishlist.html">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <a href="./product-compare.html">
+                          <i class="fa fa-exchange"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="ribbon blue"><span>new!</span></div>
+                  <div class="product-inner">
+                    <a href="./product-detail.html">
+                      <div class="product-img">
+                        <img width="246" height="186" src="./assets/img/products/p3.jpg" alt="Product Image">
+                      </div>
+                      <div class="title-area">
+                        <h2>Floral Print Buttoned</h2>
+                        <div class="product-brand">Acer</div>
+                      </div>
+                      <div class="price-holder">
+                        <del>£ 1399.99</del>
+                        <span>£ 1199.99</span>
+                      </div>
+                    </a>
+                    <div class="hover-area">
+                      <div class="hover-content">
+                        <a href="./product-detail.html" class="gold">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <a href="./wishlist.html">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <a href="./product-compare.html">
+                          <i class="fa fa-exchange"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================
+                  # Recent Products End
+              ==============================================================-->
+
+
+
+    <!-- ============================================================
+            # Company Others info
+            ==============================================================-->
+    <div class="company-other-info">
+      <div class="container">
+        <div class="row">
+          <div class="subscribe-area">
+            <form class="subscribe">
+              <input type="text" class="subscribe-input">
+              <button class="subscribe-btn">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <div class="company-big-logo">
+              <h1>Placeholder</h1>
+              <!-- <img src="./assets/img/logo.png" alt=""> -->
+            </div>
+            <div class="company-cntact">
+              <h2>Feel Free To Contact Us Via Phone,Email Or Just Send Us Mail.</h2>
+            </div>
+            <div class="company-location">
+              <p>17 Princess Road, London, Greater London NW1 8JR, UK 1-888-8MEDIA (1-888-892-9953)</p>
+            </div>
+            <div class="social-media">
+              <h3>Get In Touch</h3>
+              <ul class="social">
+                <li><a href="http://facebook.com/" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-pinterest"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+                <li><a href="#" class="fa fa-stumbleupon"></a></li>
+                <li><a href="#" class="fa fa-dribbble"></a></li>
+                <li><a href="#" class="fa fa-vk"></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="link-widget">
+              <div class="widget">
+                <h3>Find it fast</h3>
+                <ul>
+                  <li><a href="#">laptops &amp; computers</a></li>
+                  <li><a href="#">Cameras &amp; Photography</a></li>
+                  <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                  <li><a href="#">Video Games &amp; Consoles</a></li>
+                  <li><a href="#">TV &amp; Audio</a></li>
+                  <li><a href="#">Gadgets</a></li>
+                  <li><a href="#">Car Electronic &amp; GPS</a></li>
+                  <li><a href="#">Accesories</a></li>
+                </ul>
+              </div><!-- /.widget -->
+            </div>
+            <div class="link-widget">
+              <div class="widget">
+                <h3>Information</h3>
+                <ul>
+                  <li><a href="#">laptops &amp; computers</a></li>
+                  <li><a href="#">Cameras &amp; Photography</a></li>
+                  <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                  <li><a href="#">Video Games &amp; Consoles</a></li>
+                  <li><a href="#">TV &amp; Audio</a></li>
+                  <li><a href="#">Gadgets</a></li>
+                  <li><a href="#">Car Electronic &amp; GPS</a></li>
+                  <li><a href="#">Accesories</a></li>
+                </ul>
+              </div><!-- /.widget -->
+            </div>
+            <div class="link-widget">
+              <div class="widget">
+                <h3>Find it fast</h3>
+                <ul>
+                  <li><a href="#">laptops &amp; computers</a></li>
+                  <li><a href="#">Cameras &amp; Photography</a></li>
+                  <li><a href="#">Smart Phones &amp; Tablets</a></li>
+                  <li><a href="#">Video Games &amp; Consoles</a></li>
+                  <li><a href="#">TV &amp; Audio</a></li>
+                  <li><a href="#">Gadgets</a></li>
+                  <li><a href="#">Car Electronic &amp; GPS</a></li>
+                  <li><a href="#">Accesories</a></li>
+                </ul>
+              </div><!-- /.widget -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================================================
+            # Company Others info End
+            ==============================================================-->
+
+
+
+
+    <!-- ============================================================
+            # Footer area start
+            ==============================================================-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <ul class="footer-menu">
+              <li><a href="#">Site Map</a></li>
+              <li><a href="#">Search</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Advanced Search</a></li>
+              <li><a href="#">Orders and Returns</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <p class="copy-right">
+              Created with by <b>Nur Mohammad</b>. All right reserved
+            </p>
+          </div>
+          <div class="col-md-4">
+            <ul class="payment-logo">
+              <li>
+                <a href="#">
+                  <img src="./assets/img/payment-logo/payment-method-1.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/img/payment-logo/payment-method-2.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/img/payment-logo/payment-method-3.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/img/payment-logo/payment-method-4.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/img/payment-logo/payment-method-5.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ============================================================
+            # Footer area End
+            ==============================================================-->
+
+
+
+
+
+
+  </div><!-- wrapper div -->
+
+
+
+
+
+
+
+  <!-- jquery js -->
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!--OWL Carousel javascript -->
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <!--OWL Carousel javascript -->
+  <script src="assets/js/raty.js"></script>
+  <!-- main js -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
