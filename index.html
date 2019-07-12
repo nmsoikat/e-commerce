@@ -22,8 +22,9 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <!-- responsive css -->
   <link href="assets/css/responsive.css" rel="stylesheet">
-  <!-- google font -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <!-- google font (Raleway,Nanum Gothic)-->
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,600,800|Raleway:600,700&display=swap"
+    rel="stylesheet">
 
 
 </head>
@@ -40,8 +41,8 @@
     <div class="top-bar">
       <div class="container">
         <div class="row">
-          <div class="col-md-9">
-            <div class="top-holder">
+          <div class="col-xs-9">
+            <div class="top-holder hide-xs-view">
               <!-- language select -->
               <div class="h-title dropdown">
                 <a href="#" class="h-select" class="dropdown-toggle" data-toggle="dropdown">
@@ -96,7 +97,7 @@
             </div>
           </div>
 
-          <div class="col-md-3">
+          <div class="col-xs-3">
             <ul class="h-right">
               <li><a href="./login.html"><i class="fa fa-lock"></i>Login</a></li>
               <li><a href="./login.html"><i class="fa fa-user-plus"></i>Register</a></li>
@@ -115,54 +116,68 @@
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-sm-2">
-            <h1 class="logo"><a href="index.html">
+          <div class="col-xs-2">
+            <h1 class="logo hide-xs-view">
+              <a href="index.html">
                 Placeholder
-                <!-- <img src="./assets/img/logo.png" alt="Logo"> -->
-              </a></h1>
+              </a>
+            </h1>
+            <!-- <img src="./assets/img/logo.png" alt="Logo"> -->
           </div>
-          <div class="col-sm-7">
+          <div class="col-xs-7">
             <form class="search-form">
-              <input class="search" type="text">
-              <select id="category" class="category">
+              <input class="search" type="text" placeholder="Search">
+              <select id="category" class="category hide-mobile-view">
                 <option value="select" class="category">All Category</option>
                 <option value="select" class="category">Option 1</option>
                 <option value="select" class="category">Option 1</option>
                 <option value="select" class="category">Option 1</option>
                 <option value="select" class="category">Option 1</option>
               </select>
-              <span class="arrow-down"><i class="fa fa-chevron-down"></i></span>
+              <span class="arrow-down hide-element"><i class="fa fa-chevron-down"></i></span>
               <button><i class="fa fa-search"></i></button>
             </form>
           </div>
-          <div class="col-md-3">
+          <div class="col-sx-3">
             <div class="top-cart-row">
-              <div class="wishlist-compare-holder">
+              <div class="wishlist-compare-holder hide-element">
                 <div class="wishlist">
                   <a href="#">
-                    <i class="fa fa-heart"></i>
                     Wishlist
                     <span id="top-cart-wishlist-count" class="value">(0)</span>
                   </a>
                 </div>
                 <div class="compare">
                   <a href="#">
-                    <i class="fa fa-exchange"></i>
                     Compare
+                    <span id="top-cart-compare-count" class="value">(0)</span>
+                  </a>
+                </div>
+              </div>
+              <div class="wishlist-compare-holder show-element">
+                <div class="wishlist">
+                  <a href="#">
+                    <i class="fa fa-heart"></i>
+                    <span id="top-cart-wishlist-count" class="value">(0)</span>
+                  </a>
+                </div>
+                <div class="compare">
+                  <a href="#">
+                    <i class="fa fa-exchange"></i>
                     <span id="top-cart-compare-count" class="value">(0)</span>
                   </a>
                 </div>
               </div>
               <div class="dropdown">
                 <a href="#" class=" dropdown-toggle cart-holder" data-toggle="dropdown">
-                  <div class="basket-item-count">
-                    <span class="cart-items-count">5</span>
-                    <img alt="cart" src="./assets/img/buy.png">
-                  </div>
                   <div class="total-price-basket">
                     <span class="lbl">Your Cart:<span class="total-price">
                         <span>$</span><span>2500</span>
                       </span></span>
+                  </div>
+                  <div class="basket-item-count">
+                    <span class="cart-items-count">5</span>
+                    <img alt="cart" src="./assets/img/buy1.png">
                   </div>
                 </a>
                 <div class="dropdown-menu">
@@ -172,7 +187,7 @@
                     <!-- single cart 1 -->
                     <div class="cart">
                       <a href="#" class="cart-img">
-                        <img src="./assets/img/product-image-inline-4.jpg" alt="product">
+                        <img src="./assets/img/product-small/product-small-01.jpg" alt="product">
                       </a>
                       <a class="cart-content" href="#">
                         <p class="title">Pullover Batwing Sleeve Zigzag</p>
@@ -188,7 +203,7 @@
                     <!-- single cart 2 -->
                     <div class="cart">
                       <a href="#" class="cart-img">
-                        <img src="./assets/img/product-image-inline-5.jpg" alt="product">
+                        <img src="./assets/img/product-small/product-small-02.jpg" alt="product">
                       </a>
                       <a class="cart-content" href="#">
                         <p class="title">Pullover Batwing Sleeve Zigzag</p>
@@ -204,7 +219,7 @@
                     <!-- single cart 3 -->
                     <div class="cart">
                       <a href="#" class="cart-img">
-                        <img src="./assets/img/product-image-inline-6.jpg" alt="product">
+                        <img src="./assets/img/product-small/product-small-08.jpg" alt="product">
                       </a>
                       <a class="cart-content" href="#">
                         <p class="title">Pullover Batwing Sleeve Zigzag</p>
@@ -220,7 +235,7 @@
                     <!-- checkout  -->
                     <div class="cart-total-price">
                       <p class="price">Sub Total <span>$2500</span></p>
-                      <button class="btn-addtocart">CHECKOUT</button>
+                      <button class="btn-addtocart">Checkout</button>
                     </div>
                   </div>
                 </div>
@@ -231,7 +246,7 @@
       </div>
     </header>
     <!-- ============================================================
-            # Header area start
+            # Header area End
         ==============================================================-->
 
 
@@ -265,77 +280,71 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Electronics<span
                         class="caret"></span></a>
                     <ul class="dropdown-menu container mega-menu">
-                      <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-2 mega-menu-item">
-                          <h2 class="title">Laptops</h2>
-                          <ul class="links">
-                            <li><a href="#">Gaming</a></li>
-                            <li><a href="#">Laptop Skins</a></li>
-                            <li><a href="#">Apple</a></li>
-                            <li><a href="#">Dell</a></li>
-                            <li><a href="#">Lenovo</a></li>
-                            <li><a href="#">Microsoft</a></li>
-                            <li><a href="#">Asus</a></li>
-                            <li><a href="#">Adapters</a></li>
-                            <li><a href="#">Batteries</a></li>
-                            <li><a href="#">Cooling Pads</a></li>
-                          </ul>
-                        </div>
-                        <!-- /.col -->
-
-                        <div class="col-xs-12 col-sm-12 col-md-2 mega-menu-item">
-                          <h2 class="title">Desktops</h2>
-                          <ul class="links">
-                            <li><a href="#">Routers &amp; Modems</a></li>
-                            <li><a href="#">CPUs, Processors</a></li>
-                            <li><a href="#">PC Gaming Store</a></li>
-                            <li><a href="#">Graphics Cards</a></li>
-                            <li><a href="#">Components</a></li>
-                            <li><a href="#">Webcam</a></li>
-                            <li><a href="#">Memory (RAM)</a></li>
-                            <li><a href="#">Motherboards</a></li>
-                            <li><a href="#">Keyboards</a></li>
-                            <li><a href="#">Headphones</a></li>
-                          </ul>
-                        </div>
-                        <!-- /.col -->
-
-                        <div class="col-xs-12 col-sm-12 col-md-2 mega-menu-item">
-                          <h2 class="title">Cameras</h2>
-                          <ul class="links">
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Binoculars</a></li>
-                            <li><a href="#">Telescopes</a></li>
-                            <li><a href="#">Camcorders</a></li>
-                            <li><a href="#">Digital</a></li>
-                            <li><a href="#">Film Cameras</a></li>
-                            <li><a href="#">Flashes</a></li>
-                            <li><a href="#">Lenses</a></li>
-                            <li><a href="#">Surveillance</a></li>
-                            <li><a href="#">Tripods</a></li>
-
-                          </ul>
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-xs-12 col-sm-12 col-md-2 mega-menu-item">
-                          <h2 class="title">Mobile Phones</h2>
-                          <ul class="links">
-                            <li><a href="#">Apple</a></li>
-                            <li><a href="#">Samsung</a></li>
-                            <li><a href="#">Lenovo</a></li>
-                            <li><a href="#">Motorola</a></li>
-                            <li><a href="#">LeEco</a></li>
-                            <li><a href="#">Asus</a></li>
-                            <li><a href="#">Acer</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Headphones</a></li>
-                            <li><a href="#">Memory Cards</a></li>
-                          </ul>
-                        </div>
-                        <div class="col-xs-12 col-sm-6 col-md-4 mega-menu-item banner-image"> <img
-                            class="img-responsive" src="assets/img/mega-menu-banner.jpg" alt=""> </div>
-                        <!-- /.yamm-content -->
+                      <div class="mega-menu-item">
+                        <h2 class="title">Laptops</h2>
+                        <ul class="links">
+                          <li><a href="#">Gaming</a></li>
+                          <li><a href="#">Laptop Skins</a></li>
+                          <li><a href="#">Apple</a></li>
+                          <li><a href="#">Dell</a></li>
+                          <li><a href="#">Lenovo</a></li>
+                          <li><a href="#">Microsoft</a></li>
+                          <li><a href="#">Asus</a></li>
+                          <li><a href="#">Adapters</a></li>
+                          <li><a href="#">Batteries</a></li>
+                          <li><a href="#">Cooling Pads</a></li>
+                        </ul>
                       </div>
+                      <div class="mega-menu-item">
+                        <h2 class="title">Desktops</h2>
+                        <ul class="links">
+                          <li><a href="#">Routers &amp; Modems</a></li>
+                          <li><a href="#">CPUs, Processors</a></li>
+                          <li><a href="#">PC Gaming Store</a></li>
+                          <li><a href="#">Graphics Cards</a></li>
+                          <li><a href="#">Components</a></li>
+                          <li><a href="#">Webcam</a></li>
+                          <li><a href="#">Memory (RAM)</a></li>
+                          <li><a href="#">Motherboards</a></li>
+                          <li><a href="#">Keyboards</a></li>
+                          <li><a href="#">Headphones</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-menu-item">
+                        <h2 class="title">Cameras</h2>
+                        <ul class="links">
+                          <li><a href="#">Accessories</a></li>
+                          <li><a href="#">Binoculars</a></li>
+                          <li><a href="#">Telescopes</a></li>
+                          <li><a href="#">Camcorders</a></li>
+                          <li><a href="#">Digital</a></li>
+                          <li><a href="#">Film Cameras</a></li>
+                          <li><a href="#">Flashes</a></li>
+                          <li><a href="#">Lenses</a></li>
+                          <li><a href="#">Surveillance</a></li>
+                          <li><a href="#">Tripods</a></li>
+
+                        </ul>
+                      </div>
+                      <div class="mega-menu-item">
+                        <h2 class="title">Mobile Phones</h2>
+                        <ul class="links">
+                          <li><a href="#">Apple</a></li>
+                          <li><a href="#">Samsung</a></li>
+                          <li><a href="#">Lenovo</a></li>
+                          <li><a href="#">Motorola</a></li>
+                          <li><a href="#">LeEco</a></li>
+                          <li><a href="#">Asus</a></li>
+                          <li><a href="#">Acer</a></li>
+                          <li><a href="#">Accessories</a></li>
+                          <li><a href="#">Headphones</a></li>
+                          <li><a href="#">Memory Cards</a></li>
+                        </ul>
+                      </div>
+                      <div class="mega-menu-item banner-image hide-element hide-tablate-view">
+                        <img class="img-responsive" src="assets/img/mega-menu-banner.jpg" alt="">
+                      </div>
+                      <!-- /.yamm-content -->
                     </ul>
                   </li>
                   <li><a href="#">Portfolio</a></li>
@@ -346,14 +355,14 @@
                       <li><a href="index.html">Home</a></li>
                       <li><a href="category.html">Category</a></li>
                       <li><a href="product-detail.html">Detail</a></li>
-                      <li><a href="shopping-cart.html">Shopping Cart Summary</a></li>
+                      <li><a href="shopping-cart.html">Shopping Cart</a></li>
                       <li><a href="checkout.html">Checkout</a></li>
                       <li><a href="blog.html">Blog</a></li>
                       <li><a href="blog-detail.html">Blog Detail</a></li>
                       <li><a href="contact.html">Contact</a></li>
                       <li><a href="login.html">Sign In</a></li>
                       <li><a href="wishlist.html">Wishlist</a></li>
-                      <li><a href="terms-conditions.html">Terms and Condition</a></li>
+                      <li><a href="terms-and-conditions.html">Terms and Condition</a></li>
                       <li><a href="track-orders.html">Track Orders</a></li>
                       <li><a href="product-compare.html">Product-Comparison</a></li>
                       <li><a href="faq.html">FAQ</a></li>
@@ -372,7 +381,6 @@
       <!--End container -->
     </div>
     <!--End header-nav -->
-    <div class="nav-border-bottom"></div>
 
     <!-- ============================================================
             # Main Manu area End
@@ -387,7 +395,7 @@
       <div class="container">
         <div class="row">
           <!-- sidebar start -->
-          <div class="col-md-3">
+          <div class="col-md-3 hide-tablate-view hide-mobile-view">
             <div class="sidebar-navigation">
               <div class="title"><i class="icon fa fa-align-justify fa-fw"></i> Categories</div>
               <div class="sidebar-nav">
@@ -432,13 +440,13 @@
           </div><!-- end side bar -->
 
           <!-- slider start -->
-          <div class="col-md-9">
+          <div class="col-sm-12 col-md-9">
             <div class="product-slider">
               <div class="item caption-table slide-bg1">
                 <div class="caption-cell">
                   <div class="caption">Spring 2016</div>
                   <div class="big-text">
-                    Women <span class="highlight">Fashion</span>
+                    Men <span class="highlight">Fashion</span>
                   </div>
                   <div class="excerpt">
                     <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit ipsam
@@ -453,7 +461,7 @@
                 <div class="caption-cell">
                   <div class="caption">Top Brands</div>
                   <div class="big-text">
-                    Women <span class="highlight">Collection</span>
+                    Men <span class="highlight">Collection</span>
                   </div>
                   <div class="excerpt">
                     <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit ipsam
@@ -469,6 +477,21 @@
                   <div class="caption">Spring 2016</div>
                   <div class="big-text">
                     Women <span class="highlight">Fashion</span>
+                  </div>
+                  <div class="excerpt">
+                    <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit ipsam
+                      voluptatem quia voluptas sit aspernatur aut odit aut fugit</span>
+                  </div>
+                  <div class="button-holder">
+                    <a href="#" class="shop-now-button">Shop Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="item caption-table slide-bg4">
+                <div class="caption-cell">
+                  <div class="caption">Spring 2016</div>
+                  <div class="big-text">
+                    Men <span class="highlight">Fashion</span>
                   </div>
                   <div class="excerpt">
                     <span>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit ipsam
@@ -496,19 +519,19 @@
       <div class="container">
         <div class="row">
           <!-- Main Content Other Info area Start-->
-          <div class="col-md-3">
+          <div class="col-sm-12 col-md-3">
             <div class="other-info-bar">
               <div class="information-blog-offer">
                 <!-- offer blog -->
                 <div class="offer-parcentage">
-                  <h1>-40%</h1>
+                  <h1>-35%</h1>
                   <h3>Winter Sale</h3>
                 </div>
                 <div class="description">
                   <p>Lorem ipsum dolor,consectetur adipisicing elit sit amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="product-img">
-                  <img src="./assets/img/offer-img1.jpg" alt="">
+                  <img src="./assets/img/shoes-men/mens-shoes-2.jpg" alt="">
                 </div>
                 <div class="hot-bar">Hot</div>
               </div>
@@ -527,7 +550,7 @@
                         voluptatem dolores consequuntur molestias maxime iste vel id aspernatur? Totam nobis
 
                       </div>
-                      <div>
+                      <div class="b-footer">
                         <cite>Helen Smith</cite>, 25 minutes ago
                       </div>
                     </div>
@@ -584,7 +607,7 @@
           </div><!-- Main Content Other Info area End -->
 
           <!-- Main Content Product Area Start -->
-          <div class="col-md-9">
+          <div class="col-sm-12 col-md-9">
 
             <div class="main-content">
               <div class="tab-holder">
@@ -612,17 +635,17 @@
                     <div class="row">
                       <ul class="products">
                         <!-- single product item 1-->
-                        <li class="product-item">
+                        <li class="product-item p-item">
                           <div class="ribbon blue"><span>new!</span></div>
-                          <div class="product-inner">
+                          <div class="product-inner p-inner">
                             <a href="./product-detail.html">
-                              <div class="product-img">
-                                <img width="246" height="186" src="./assets/img/products/product-bag-1.jpg"
-                                  alt="Product Image">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(10).jpg" alt="Product Image">
                               </div>
                               <div class="title-area">
-                                <h2>Floral Print Buttoned</h2>
-                                <div class="product-brand">Acer</div>
+                                <h2>Huarache (shoe)</h2>
+                                <div class="product-brand">Nike</div>
+
                               </div>
                               <div class="price-holder">
                                 <del>$1399.99</del>
@@ -645,17 +668,16 @@
                           </div>
                         </li>
                         <!-- single product item 2-->
-                        <li class="product-item">
+                        <li class="product-item p-item">
                           <div class="ribbon red"><span>Sell</span></div>
-                          <div class="product-inner">
+                          <div class="product-inner p-inner">
                             <a href="./product-detail.html">
-                              <div class="product-img">
-                                <img width="246" height="186" src="./assets/img/products/product-bag-2.jpg"
-                                  alt="Product Image">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(1).jpg" alt="Product Image">
                               </div>
                               <div class="title-area">
-                                <h2>Floral Print Buttoned</h2>
-                                <div class="product-brand">Acer</div>
+                                <h2>Jazz shoe</h2>
+                                <div class="product-brand">Adidas</div>
                               </div>
 
                               <div class="price-holder">
@@ -679,17 +701,16 @@
                           </div>
                         </li>
                         <!-- single product item 3-->
-                        <li class="product-item">
+                        <li class="product-item p-item">
                           <div class="ribbon blue"><span>new!</span></div>
-                          <div class="product-inner">
+                          <div class="product-inner p-inner">
                             <a href="./product-detail.html">
-                              <div class="product-img">
-                                <img width="246" height="186" src="./assets/img/products/product-bag-3.jpg"
-                                  alt="Product Image">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(11).jpg" alt="Product Image">
                               </div>
                               <div class="title-area">
-                                <h2>Floral Print Buttoned</h2>
-                                <div class="product-brand">Acer</div>
+                                <h2>Hiking shoes</h2>
+                                <div class="product-brand">New Balance</div>
                               </div>
 
                               <div class="price-holder">
@@ -713,18 +734,17 @@
                           </div>
                         </li>
                         <!-- single product item 4-->
-                        <li class="product-item">
+                        <li class="product-item p-item">
                           <div class="ribbon red"><span>Sell</span></div>
-                          <div class="ribbon green"><span>Bestseller</span></div>
-                          <div class="product-inner">
+                          <div class="ribbon light-blue"><span>Bestseller</span></div>
+                          <div class="product-inner p-inner">
                             <a href="./product-detail.html">
-                              <div class="product-img">
-                                <img width="246" height="186" src="./assets/img/products/product-bag-3.jpg"
-                                  alt="Product Image">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(12).jpg" alt="Product Image">
                               </div>
                               <div class="title-area">
-                                <h2>Floral Print Buttoned</h2>
-                                <div class="product-brand">Acer</div>
+                                <h2>Loafers</h2>
+                                <div class="product-brand">Asics</div>
                               </div>
 
                               <div class="price-holder">
@@ -748,17 +768,16 @@
                           </div>
                         </li>
                         <!-- single product item 5-->
-                        <li class="product-item">
+                        <li class="product-item p-item">
                           <div class="ribbon red"><span>Sell</span></div>
-                          <div class="product-inner">
+                          <div class="product-inner p-inner">
                             <a href="./product-detail.html">
-                              <div class="product-img">
-                                <img width="246" height="186" src="./assets/img/products/product-bag-3.jpg"
-                                  alt="Product Image">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(13).jpg" alt="Product Image">
                               </div>
                               <div class="title-area">
-                                <h2>Floral Print Buttoned</h2>
-                                <div class="product-brand">Acer</div>
+                                <h2>Monk shoe</h2>
+                                <div class="product-brand">Kering (PUMA)</div>
                               </div>
 
                               <div class="price-holder">
@@ -782,17 +801,16 @@
                           </div>
                         </li>
                         <!-- single product item 6-->
-                        <li class="product-item">
+                        <li class="product-item p-item">
                           <div class="ribbon red"><span>Sell</span></div>
-                          <div class="product-inner">
+                          <div class="product-inner p-inner">
                             <a href="./product-detail.html">
-                              <div class="product-img">
-                                <img width="246" height="186" src="./assets/img/products/product-bag-3.jpg"
-                                  alt="Product Image">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(14).jpg" alt="Product Image">
                               </div>
                               <div class="title-area">
-                                <h2>Floral Print Buttoned</h2>
-                                <div class="product-brand">Acer</div>
+                                <h2>Orthopaedic footwear</h2>
+                                <div class="product-brand">Skechers</div>
                               </div>
 
                               <div class="price-holder">
@@ -815,28 +833,225 @@
                             </div>
                           </div>
                         </li>
+                        <!-- single product item 7-->
+                        <li class="product-item p-item">
+                          <div class="ribbon blue"><span>new!</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(15).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Peranakan beaded slippers</h2>
+                                <div class="product-brand">Fila</div>
+                              </div>
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 8-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(2).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Jazz shoe</h2>
+                                <div class="product-brand">Bata</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 9-->
+                        <li class="product-item p-item">
+                          <div class="ribbon blue"><span>new!</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(3).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Hiking shoes</h2>
+                                <div class="product-brand">New Balance</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 10-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="ribbon light-blue"><span>Bestseller</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(4).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Venetian-style shoe</h2>
+                                <div class="product-brand">Burberry</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 11-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(5).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Tiger-head shoes</h2>
+                                <div class="product-brand">VF Corporation</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 12-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(6).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Spectator shoe</h2>
+                                <div class="product-brand">Bata</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
                         <!--single product item End-->
                       </ul>
                     </div>
                   </div> <!-- single tab featured End -->
 
-
                   <!-- single tab onsale -->
-                  <div id="onsale" class="tab-pane ">
+                  <div id="onsale" class="tab-pane">
                     <div class="row">
                       <ul class="products">
                         <!-- single product item 1-->
-                        <li class="product-item">
+                        <li class="product-item p-item">
                           <div class="ribbon red"><span>Sell</span></div>
-                          <div class="product-inner">
-                            <a href="#">
-                              <div class="product-img">
-                                <img width="246" height="186" src="./assets/img/products/product-bag-1.jpg"
-                                  alt="Product Image">
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(1).jpg" alt="Product Image">
                               </div>
                               <div class="title-area">
-                                <h2>Floral Print Buttoned</h2>
-                                <div class="product-brand">Acer</div>
+                                <h2>Jazz shoe</h2>
+                                <div class="product-brand">Adidas</div>
                               </div>
 
                               <div class="price-holder">
@@ -845,40 +1060,31 @@
                               </div>
                             </a>
                             <div class="hover-area">
-                              <div class="hover-conent">
-                                <div class="content">
-                                  <div class="hover-btn">
-                                    <button>Add to cart</button>
-                                  </div>
-                                  <div class="wishlist-compare-holder">
-                                    <a href="#">
-                                      <i class="fa fa-heart"></i>
-                                      Wishlist
-                                      <span id="top-cart-wishlist-count" class="value">(0)</span>
-                                    </a>
-                                    <a href="#">
-                                      <i class="fa fa-exchange"></i>
-                                      Compare
-                                      <span id="top-cart-compare-count" class="value">(0)</span>
-                                    </a>
-                                  </div>
-                                </div>
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
                               </div>
                             </div>
                           </div>
                         </li>
                         <!-- single product item 2-->
-                        <li class="product-item">
+                        <li class="product-item p-item">
                           <div class="ribbon red"><span>Sell</span></div>
-                          <div class="product-inner">
-                            <a href="#">
-                              <div class="product-img">
-                                <img width="246" height="186" src="./assets/img/products/product-bag-2.jpg"
-                                  alt="Product Image">
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(13).jpg" alt="Product Image">
                               </div>
                               <div class="title-area">
-                                <h2>Floral Print Buttoned</h2>
-                                <div class="product-brand">Acer</div>
+                                <h2>Monk shoe</h2>
+                                <div class="product-brand">Kering (PUMA)</div>
                               </div>
 
                               <div class="price-holder">
@@ -887,40 +1093,31 @@
                               </div>
                             </a>
                             <div class="hover-area">
-                              <div class="hover-conent">
-                                <div class="content">
-                                  <div class="hover-btn">
-                                    <button>Add to cart</button>
-                                  </div>
-                                  <div class="wishlist-compare-holder">
-                                    <a href="#">
-                                      <i class="fa fa-heart"></i>
-                                      Wishlist
-                                      <span id="top-cart-wishlist-count" class="value">(0)</span>
-                                    </a>
-                                    <a href="#">
-                                      <i class="fa fa-exchange"></i>
-                                      Compare
-                                      <span id="top-cart-compare-count" class="value">(0)</span>
-                                    </a>
-                                  </div>
-                                </div>
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
                               </div>
                             </div>
                           </div>
                         </li>
                         <!-- single product item 3-->
-                        <li class="product-item">
+                        <li class="product-item p-item">
                           <div class="ribbon red"><span>Sell</span></div>
-                          <div class="product-inner">
-                            <a href="#">
-                              <div class="product-img">
-                                <img width="246" height="186" src="./assets/img/products/product-bag-3.jpg"
-                                  alt="Product Image">
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(14).jpg" alt="Product Image">
                               </div>
                               <div class="title-area">
-                                <h2>Floral Print Buttoned</h2>
-                                <div class="product-brand">Acer</div>
+                                <h2>Orthopaedic footwear</h2>
+                                <div class="product-brand">Skechers</div>
                               </div>
 
                               <div class="price-holder">
@@ -929,24 +1126,148 @@
                               </div>
                             </a>
                             <div class="hover-area">
-                              <div class="hover-conent">
-                                <div class="content">
-                                  <div class="hover-btn">
-                                    <button>Add to cart</button>
-                                  </div>
-                                  <div class="wishlist-compare-holder">
-                                    <a href="#">
-                                      <i class="fa fa-heart"></i>
-                                      Wishlist
-                                      <span id="top-cart-wishlist-count" class="value">(0)</span>
-                                    </a>
-                                    <a href="#">
-                                      <i class="fa fa-exchange"></i>
-                                      Compare
-                                      <span id="top-cart-compare-count" class="value">(0)</span>
-                                    </a>
-                                  </div>
-                                </div>
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 4-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(2).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Jazz shoe</h2>
+                                <div class="product-brand">Bata</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 5-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>new!</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(3).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Hiking shoes</h2>
+                                <div class="product-brand">New Balance</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 6-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(5).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Tiger-head shoes</h2>
+                                <div class="product-brand">VF Corporation</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 7-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(6).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Spectator shoe</h2>
+                                <div class="product-brand">Bata</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
                               </div>
                             </div>
                           </div>
@@ -956,6 +1277,255 @@
                       </ul>
                     </div>
                   </div> <!-- single tab onsale End -->
+
+                  <!-- single tab bestsell -->
+                  <div id="bestsell" class="tab-pane">
+                    <div class="row">
+                      <ul class="products">
+                        <!-- single product item 1-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="ribbon light-blue"><span>Bestseller</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(1).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Jazz shoe</h2>
+                                <div class="product-brand">Adidas</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 2-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="ribbon light-blue"><span>Bestseller</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(13).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Monk shoe</h2>
+                                <div class="product-brand">Kering (PUMA)</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 3-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="ribbon light-blue"><span>Bestseller</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(14).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Orthopaedic footwear</h2>
+                                <div class="product-brand">Skechers</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 4-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="ribbon light-blue"><span>Bestseller</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(2).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Jazz shoe</h2>
+                                <div class="product-brand">Bata</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 5-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="ribbon light-blue"><span>Bestseller</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(3).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Hiking shoes</h2>
+                                <div class="product-brand">New Balance</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 6-->
+                        <li class="product-item p-item">
+                          <div class="ribbon blue"><span>New</span></div>
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="ribbon light-blue"><span>Bestseller</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(5).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Tiger-head shoes</h2>
+                                <div class="product-brand">VF Corporation</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <!-- single product item 7-->
+                        <li class="product-item p-item">
+                          <div class="ribbon red"><span>Sell</span></div>
+                          <div class="ribbon light-blue"><span>Bestseller</span></div>
+                          <div class="product-inner p-inner">
+                            <a href="./product-detail.html">
+                              <div class="product-img p-img">
+                                <img src="./assets/img/shoes-men/shoes-men(6).jpg" alt="Product Image">
+                              </div>
+                              <div class="title-area">
+                                <h2>Spectator shoe</h2>
+                                <div class="product-brand">Bata</div>
+                              </div>
+
+                              <div class="price-holder">
+                                <del>$1399.99</del>
+                                <span>$1199.99</span>
+                              </div>
+                            </a>
+                            <div class="hover-area">
+                              <div class="hover-content">
+                                <a href="./product-detail.html" class="gold">
+                                  <i class="fa fa-shopping-cart"></i>
+                                </a>
+                                <a href="./wishlist.html">
+                                  <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="./product-compare.html">
+                                  <i class="fa fa-exchange"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <!--single product item End-->
+                      </ul>
+                    </div>
+                  </div> <!-- single tab bestsell End -->
 
                 </div><!-- Tab content area End -->
               </div>
@@ -994,16 +1564,18 @@
             <div class="recent-view">
               <h1 class="section-title">Recently Viewed</h1>
               <div class="recent-slider">
+                <!-- single product item 1-->
                 <div class="product-item">
                   <div class="ribbon blue"><span>new!</span></div>
                   <div class="product-inner">
                     <a href="./product-detail.html">
                       <div class="product-img">
-                        <img width="246" height="186" src="./assets/img/products/product-bag-1.jpg" alt="Product Image">
+                        <img src="./assets/img/shoes-men/shoes-men(10).jpg" alt="Product Image">
                       </div>
                       <div class="title-area">
-                        <h2>Floral Print Buttoned</h2>
-                        <div class="product-brand">Acer</div>
+                        <h2>Huarache (shoe)</h2>
+                        <div class="product-brand">Nike</div>
+
                       </div>
                       <div class="price-holder">
                         <del>$1399.99</del>
@@ -1025,16 +1597,183 @@
                     </div>
                   </div>
                 </div>
+                <!-- single product item 2-->
+                <div class="product-item">
+                  <div class="ribbon red"><span>Sell</span></div>
+                  <div class="product-inner">
+                    <a href="./product-detail.html">
+                      <div class="product-img">
+                        <img src="./assets/img/shoes-men/shoes-men(1).jpg" alt="Product Image">
+                      </div>
+                      <div class="title-area">
+                        <h2>Jazz shoe</h2>
+                        <div class="product-brand">Adidas</div>
+                      </div>
+
+                      <div class="price-holder">
+                        <del>$1399.99</del>
+                        <span>$1199.99</span>
+                      </div>
+                    </a>
+                    <div class="hover-area">
+                      <div class="hover-content">
+                        <a href="./product-detail.html" class="gold">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <a href="./wishlist.html">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <a href="./product-compare.html">
+                          <i class="fa fa-exchange"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product item 3-->
                 <div class="product-item">
                   <div class="ribbon blue"><span>new!</span></div>
                   <div class="product-inner">
                     <a href="./product-detail.html">
                       <div class="product-img">
-                        <img width="246" height="186" src="./assets/img/products/product-bag-2.jpg" alt="Product Image">
+                        <img src="./assets/img/shoes-men/shoes-men(11).jpg" alt="Product Image">
                       </div>
                       <div class="title-area">
-                        <h2>Floral Print Buttoned</h2>
-                        <div class="product-brand">Acer</div>
+                        <h2>Hiking shoes</h2>
+                        <div class="product-brand">New Balance</div>
+                      </div>
+
+                      <div class="price-holder">
+                        <del>$1399.99</del>
+                        <span>$1199.99</span>
+                      </div>
+                    </a>
+                    <div class="hover-area">
+                      <div class="hover-content">
+                        <a href="./product-detail.html" class="gold">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <a href="./wishlist.html">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <a href="./product-compare.html">
+                          <i class="fa fa-exchange"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product item 4-->
+                <div class="product-item">
+                  <div class="ribbon red"><span>Sell</span></div>
+                  <div class="ribbon light-blue"><span>Bestseller</span></div>
+                  <div class="product-inner">
+                    <a href="./product-detail.html">
+                      <div class="product-img">
+                        <img src="./assets/img/shoes-men/shoes-men(12).jpg" alt="Product Image">
+                      </div>
+                      <div class="title-area">
+                        <h2>Loafers</h2>
+                        <div class="product-brand">Asics</div>
+                      </div>
+
+                      <div class="price-holder">
+                        <del>$1399.99</del>
+                        <span>$1199.99</span>
+                      </div>
+                    </a>
+                    <div class="hover-area">
+                      <div class="hover-content">
+                        <a href="./product-detail.html" class="gold">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <a href="./wishlist.html">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <a href="./product-compare.html">
+                          <i class="fa fa-exchange"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product item 5-->
+                <div class="product-item">
+                  <div class="ribbon red"><span>Sell</span></div>
+                  <div class="product-inner">
+                    <a href="./product-detail.html">
+                      <div class="product-img">
+                        <img src="./assets/img/shoes-men/shoes-men(13).jpg" alt="Product Image">
+                      </div>
+                      <div class="title-area">
+                        <h2>Monk shoe</h2>
+                        <div class="product-brand">Kering (PUMA)</div>
+                      </div>
+
+                      <div class="price-holder">
+                        <del>$1399.99</del>
+                        <span>$1199.99</span>
+                      </div>
+                    </a>
+                    <div class="hover-area">
+                      <div class="hover-content">
+                        <a href="./product-detail.html" class="gold">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <a href="./wishlist.html">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <a href="./product-compare.html">
+                          <i class="fa fa-exchange"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product item 6-->
+                <div class="product-item">
+                  <div class="ribbon red"><span>Sell</span></div>
+                  <div class="product-inner">
+                    <a href="./product-detail.html">
+                      <div class="product-img">
+                        <img src="./assets/img/shoes-men/shoes-men(14).jpg" alt="Product Image">
+                      </div>
+                      <div class="title-area">
+                        <h2>Orthopaedic footwear</h2>
+                        <div class="product-brand">Skechers</div>
+                      </div>
+
+                      <div class="price-holder">
+                        <del>$1399.99</del>
+                        <span>$1199.99</span>
+                      </div>
+                    </a>
+                    <div class="hover-area">
+                      <div class="hover-content">
+                        <a href="./product-detail.html" class="gold">
+                          <i class="fa fa-shopping-cart"></i>
+                        </a>
+                        <a href="./wishlist.html">
+                          <i class="fa fa-heart"></i>
+                        </a>
+                        <a href="./product-compare.html">
+                          <i class="fa fa-exchange"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single product item 7-->
+                <div class="product-item">
+                  <div class="ribbon blue"><span>new!</span></div>
+                  <div class="product-inner">
+                    <a href="./product-detail.html">
+                      <div class="product-img">
+                        <img src="./assets/img/shoes-men/shoes-men(15).jpg" alt="Product Image">
+                      </div>
+                      <div class="title-area">
+                        <h2>Peranakan beaded slippers</h2>
+                        <div class="product-brand">Fila</div>
                       </div>
                       <div class="price-holder">
                         <del>$1399.99</del>
@@ -1056,17 +1795,19 @@
                     </div>
                   </div>
                 </div>
+                <!-- single product item 8-->
                 <div class="product-item">
-                  <div class="ribbon blue"><span>new!</span></div>
+                  <div class="ribbon red"><span>Sell</span></div>
                   <div class="product-inner">
                     <a href="./product-detail.html">
                       <div class="product-img">
-                        <img width="246" height="186" src="./assets/img/products/product-bag-3.jpg" alt="Product Image">
+                        <img src="./assets/img/shoes-men/shoes-men(2).jpg" alt="Product Image">
                       </div>
                       <div class="title-area">
-                        <h2>Floral Print Buttoned</h2>
-                        <div class="product-brand">Acer</div>
+                        <h2>Jazz shoe</h2>
+                        <div class="product-brand">Bata</div>
                       </div>
+
                       <div class="price-holder">
                         <del>$1399.99</del>
                         <span>$1199.99</span>
@@ -1087,17 +1828,19 @@
                     </div>
                   </div>
                 </div>
+                <!-- single product item 9-->
                 <div class="product-item">
                   <div class="ribbon blue"><span>new!</span></div>
                   <div class="product-inner">
                     <a href="./product-detail.html">
                       <div class="product-img">
-                        <img width="246" height="186" src="./assets/img/products/product-bag-4.jpg" alt="Product Image">
+                        <img src="./assets/img/shoes-men/shoes-men(3).jpg" alt="Product Image">
                       </div>
                       <div class="title-area">
-                        <h2>Floral Print Buttoned</h2>
-                        <div class="product-brand">Acer</div>
+                        <h2>Hiking shoes</h2>
+                        <div class="product-brand">New Balance</div>
                       </div>
+
                       <div class="price-holder">
                         <del>$1399.99</del>
                         <span>$1199.99</span>
@@ -1118,48 +1861,20 @@
                     </div>
                   </div>
                 </div>
+                <!-- single product item 10-->
                 <div class="product-item">
-                  <div class="ribbon blue"><span>new!</span></div>
+                  <div class="ribbon red"><span>Sell</span></div>
+                  <div class="ribbon light-blue"><span>Bestseller</span></div>
                   <div class="product-inner">
                     <a href="./product-detail.html">
                       <div class="product-img">
-                        <img width="246" height="186" src="./assets/img/products/p2.jpg" alt="Product Image">
+                        <img src="./assets/img/shoes-men/shoes-men(4).jpg" alt="Product Image">
                       </div>
                       <div class="title-area">
-                        <h2>Floral Print Buttoned</h2>
-                        <div class="product-brand">Acer</div>
+                        <h2>Venetian-style shoe</h2>
+                        <div class="product-brand">Burberry</div>
                       </div>
-                      <div class="price-holder">
-                        <del>$1399.99</del>
-                        <span>$1199.99</span>
-                      </div>
-                    </a>
-                    <div class="hover-area">
-                      <div class="hover-content">
-                        <a href="./product-detail.html" class="gold">
-                          <i class="fa fa-shopping-cart"></i>
-                        </a>
-                        <a href="./wishlist.html">
-                          <i class="fa fa-heart"></i>
-                        </a>
-                        <a href="./product-compare.html">
-                          <i class="fa fa-exchange"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="product-item">
-                  <div class="ribbon blue"><span>new!</span></div>
-                  <div class="product-inner">
-                    <a href="./product-detail.html">
-                      <div class="product-img">
-                        <img width="246" height="186" src="./assets/img/products/p3.jpg" alt="Product Image">
-                      </div>
-                      <div class="title-area">
-                        <h2>Floral Print Buttoned</h2>
-                        <div class="product-brand">Acer</div>
-                      </div>
+
                       <div class="price-holder">
                         <del>$1399.99</del>
                         <span>$1199.99</span>
@@ -1195,156 +1910,158 @@
     <!-- ============================================================
         # Products small view start
         ==============================================================-->
-    <div class="product-small-view">
+    <!-- <div class="product-small-view">
       <div class="container">
         <div class="row">
-          <div class="product-small-inner">
-            <!-- featured product -->
-            <div class="col-md-4">
+          <div class="product-small-inner"> -->
+
+    <!-- featured product -->
+    <!-- <div class="col-md-4">
               <div class="title">
                 <h1>Featured Products</h1>
               </div>
-              <ul class="product-list">
-                <!-- small product 1 -->
-                <li>
-                  <div class="product-content">
-                    <a href="./product-detail.html">Netbook Acer Travel B113-E-10072.</a>
-                    <span class="s-product-price">
-                      <del>$2000</del>
-                      <span> $1873</span>
-                    </span>
-                  </div>
+              <ul class="product-list"> -->
+    <!-- small product 1 -->
+    <!-- <li>
                   <div class="s-product-img">
                     <img src="./assets/img/product-small/product-small-01.jpg" alt="">
                   </div>
-                </li>
-                <!-- small product 2 -->
-                <li>
                   <div class="product-content">
-                    <a href="./product-detail.html">Netbook Acer Travel B113-E-10072.</a>
+                    <a href="./product-detail.html">Spectator shoe</a>
                     <span class="s-product-price">
                       <del>$2000</del>
                       <span> $1873</span>
                     </span>
                   </div>
+                </li> -->
+    <!-- small product 2 -->
+    <!-- <li>
                   <div class="s-product-img">
                     <img src="./assets/img/product-small/product-small-02.jpg" alt="">
                   </div>
-                </li>
-                <!-- small product 3 -->
-                <li>
                   <div class="product-content">
-                    <a href="./product-detail.html">Netbook Acer Travel B113-E-10072.</a>
+                    <a href="./product-detail.html">Rocker bottom shoe</a>
                     <span class="s-product-price">
                       <del>$2000</del>
                       <span> $1873</span>
                     </span>
                   </div>
+                </li> -->
+    <!-- small product 3 -->
+    <!-- <li>
                   <div class="s-product-img">
                     <img src="./assets/img/product-small/product-small-03.jpg" alt="">
                   </div>
-                </li>
-              </ul>
-            </div><!-- featured product end-->
-            <!-- On-Sale Products -->
-            <div class="col-md-4">
+                  <div class="product-content">
+                    <a href="./product-detail.html">Peranakan beaded slippers</a>
+                    <span class="s-product-price">
+                      <del>$2000</del>
+                      <span> $1873</span>
+                    </span>
+                  </div>
+                </li> 
+              </ul>-->
+    <!--  </div> featured product end-->
+
+    <!-- On-Sale Products -->
+    <!-- <div class="col-md-4">
               <div class="title">
                 <h1>On-Sale Products</h1>
               </div>
-              <ul class="product-list">
-                <!-- small product 1 -->
-                <li>
+              <ul class="product-list"> -->
+    <!-- small product 1 -->
+    <!-- <li>
+                  <div class="s-product-img">
+                    <img src="./assets/img/product-small/product-small-04.jpg" alt="">
+                  </div>
                   <div class="product-content">
-                    <a href="./product-detail.html">Netbook Acer Travel B113-E-10072.</a>
+                    <a href="./product-detail.html">Huarache (shoe)</a>
                     <span class="s-product-price">
                       <del>$2000</del>
                       <span> $1873</span>
                     </span>
                   </div>
+                </li> -->
+    <!-- small product 2 -->
+    <!-- <li>
                   <div class="s-product-img">
-                    <img src="./assets/img/product-small/product-small-01.jpg" alt="">
+                    <img src="./assets/img/product-small/product-small-05.jpg" alt="">
                   </div>
-                </li>
-                <!-- small product 2 -->
-                <li>
                   <div class="product-content">
-                    <a href="./product-detail.html">Netbook Acer Travel B113-E-10072.</a>
+                    <a href="./product-detail.html">Monk shoe</a>
                     <span class="s-product-price">
                       <del>$2000</del>
                       <span> $1873</span>
                     </span>
                   </div>
+                </li> -->
+    <!-- small product 3 -->
+    <!-- <li>
                   <div class="s-product-img">
-                    <img src="./assets/img/product-small/product-small-02.jpg" alt="">
+                    <img src="./assets/img/product-small/product-small-06.jpg" alt="">
                   </div>
-                </li>
-                <!-- small product 3 -->
-                <li>
                   <div class="product-content">
-                    <a href="./product-detail.html">Netbook Acer Travel B113-E-10072.</a>
+                    <a href="./product-detail.html">Winklepicker</a>
                     <span class="s-product-price">
                       <del>$2000</del>
                       <span> $1873</span>
                     </span>
                   </div>
-                  <div class="s-product-img">
-                    <img src="./assets/img/product-small/product-small-03.jpg" alt="">
-                  </div>
                 </li>
-              </ul>
-            </div><!-- On-Sale Products end-->
+              </ul> -->
+    <!--  </div> On-Sale Products end-->
 
-            <!-- Top Rated Products -->
-            <div class="col-md-4">
+    <!-- Top Rated Products -->
+    <!-- <div class="col-md-4">
               <div class="title">
                 <h1>Top Rated Products</h1>
               </div>
-              <ul class="product-list">
-                <!-- small product 1 -->
-                <li>
-                  <div class="product-content">
-                    <a href="./product-detail.html">Netbook Acer Travel B113-E-10072.</a>
-                    <span class="s-product-price">
-                      <del>$2000</del>
-                      <span> $1873</span>
-                    </span>
-                  </div>
+              <ul class="product-list"> -->
+    <!-- small product 1 -->
+    <!-- <li>
                   <div class="s-product-img">
-                    <img src="./assets/img/product-small/product-small-01.jpg" alt="">
+                    <img src="./assets/img/product-small/product-small-07.jpg" alt="">
                   </div>
-                </li>
-                <!-- small product 2 -->
-                <li>
                   <div class="product-content">
-                    <a href="./product-detail.html">Netbook Acer Travel B113-E-10072.</a>
+                    <a href="./product-detail.html">Oxford shoe</a>
                     <span class="s-product-price">
                       <del>$2000</del>
                       <span> $1873</span>
                     </span>
                   </div>
+                </li> -->
+    <!-- small product 2 -->
+    <!-- <li>
                   <div class="s-product-img">
-                    <img src="./assets/img/product-small/product-small-02.jpg" alt="">
+                    <img src="./assets/img/product-small/product-small-08.jpg" alt="">
                   </div>
-                </li>
-                <!-- small product 3 -->
-                <li>
                   <div class="product-content">
-                    <a href="./product-detail.html">Netbook Acer Travel B113-E-10072.</a>
+                    <a href="./product-detail.html">Kolhapuri Chappal</a>
                     <span class="s-product-price">
                       <del>$2000</del>
                       <span> $1873</span>
                     </span>
                   </div>
+                </li> -->
+    <!-- small product 3 -->
+    <!-- <li>
                   <div class="s-product-img">
                     <img src="./assets/img/product-small/product-small-03.jpg" alt="">
                   </div>
+                  <div class="product-content">
+                    <a href="./product-detail.html">Organ shoes</a>
+                    <span class="s-product-price">
+                      <del>$2000</del>
+                      <span> $1873</span>
+                    </span>
+                  </div>
                 </li>
-              </ul>
-            </div><!-- Top Rated Products end-->
-          </div>
-        </div>
-      </div>
-    </div>
+              </ul> -->
+    <!--</div> Top Rated Products end-->
+    <!-- </div>
+  </div>
+  </div>
+  </div> -->
     <!-- ============================================================
             # Products small view start
             ==============================================================-->
@@ -1356,18 +2073,18 @@
     <div class="company-other-info">
       <div class="container">
         <div class="row">
-          <div class="subscribe-area">
-            <form class="subscribe">
-              <input type="text" class="subscribe-input">
-              <button class="subscribe-btn">Subscribe</button>
-            </form>
-          </div>
-          <div class="col-md-4">
+          <div class="col-sm-5 col-md-4">
             <div class="company-big-logo">
               <h1>Placeholder</h1>
               <!-- <img src="./assets/img/logo.png" alt=""> -->
             </div>
-            <div class="company-cntact">
+            <div class="subscribe-area">
+              <form class="subscribe">
+                <button class="subscribe-btn">Subscribe</button>
+                <input type="text" class="subscribe-input" placeholder="example@gmail.com">
+              </form>
+            </div>
+            <div class="company-contact">
               <h2>Feel Free To Contact Us Via Phone,Email Or Just Send Us Mail.</h2>
             </div>
             <div class="company-location">
@@ -1386,7 +2103,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-sm-7 col-md-8 hide-xs-view">
             <div class="link-widget">
               <div class="widget">
                 <h3>Find it fast</h3>
@@ -1417,7 +2134,7 @@
                 </ul>
               </div><!-- /.widget -->
             </div>
-            <div class="link-widget">
+            <div class="link-widget hide-tablate-view">
               <div class="widget">
                 <h3>Find it fast</h3>
                 <ul>
@@ -1449,20 +2166,20 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-sm-8 col-md-8">
             <ul class="footer-menu">
               <li><a href="#">Site Map</a></li>
               <li><a href="#">Search</a></li>
               <li><a href="#">Terms</a></li>
               <li><a href="#">Advanced Search</a></li>
-              <li><a href="#">Orders and Returns</a></li>
+              <li class="hide-tablate-view hide-xs-view"><a href="#">Orders and Returns</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
             <p class="copy-right">
               Created with by <b>Nur Mohammad</b>. All right reserved
             </p>
           </div>
-          <div class="col-md-4">
+          <div class="col-sm-4 col-md-4">
             <ul class="payment-logo">
               <li>
                 <a href="#">
@@ -1516,7 +2233,6 @@
   <script src="assets/js/owl.carousel.min.js"></script>
   <!-- main js -->
   <script src="assets/js/main.js"></script>
-
 
 </body>
 
