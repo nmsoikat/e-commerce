@@ -381,6 +381,7 @@ select#category:after{
 .wishlist-compare-holder {
     float: left;
 }
+
 .basket-item-count {
     float: right;
     position: relative;
@@ -950,7 +951,7 @@ Left infomation area start
     width: 247px;
 }
 .main-content .product-img{
-    height: 238px;
+    height: 200px;
     overflow: hidden;
 }
 .recent-product-area .product-img {
@@ -1369,6 +1370,13 @@ ul.payment-logo li a:hover {
  # Product details page css start
 ================================================================================*/
 /* ------------------ product view, add to cart  --------------------*/
+.product-detail-view .information-blog-offer {
+    margin-bottom: 0px;
+}
+
+.product-detail-view .product-img {
+    margin-top: 54px;
+}
 .single-product-info-tab .tab-holder {
     background-color: #fff;
     -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
@@ -1964,7 +1972,9 @@ p.text {
     color: #666;
     padding-left: 10px;
 }
-
+.wish-img {
+    width: 160px;
+}
 .wish-table tr td {
     padding: 30px 15px;
 }
@@ -1978,6 +1988,11 @@ p.text {
     color: red;
     opacity: 1;
 }
+.wish-table tbody tr td {
+    vertical-align: middle;
+}
+
+
 /* =============================================================================
  # Product Wishlist page css End
 ================================================================================*/
@@ -3093,9 +3108,8 @@ font-size: 16px !important;
     height: 100%;
     opacity: 0;
 }
-.information-entry a.forgot-password {
+.information-entry a {
     display: inline-block;
-    margin-left: 36%;
     color: #00539c;
 }
 
@@ -3397,7 +3411,7 @@ ul.list-unstyled li span {
     border-radius: 2px;
     -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
             box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
-    padding: 20px;
+    padding: 20px 0px;
     overflow: hidden;   
 }
 .contact-page .address, .contact-page .contact-info .phone-no {
@@ -3440,6 +3454,12 @@ ul.list-unstyled li span {
     color: #666;
     font-size: 16px;
     line-height: 28px;
+}
+.col-sm-8.contact-form {
+    margin-left: -15px;
+}
+.contact-page .our-store{
+    margin-right: 0px
 }
 
 
