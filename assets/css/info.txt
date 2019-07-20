@@ -1,0 +1,54 @@
+HTML Comment
+<!-- ============================================================
+# 
+==============================================================-->
+
+
+CSS Comment
+/* ------------------------------------------------------- *\
+   
+\* ------------------------------------------------------- */
+
+/* /-----  -----/ */
+
+
+JS Comment
+/*
+=-----------------------------------------------------
+    ++  ++
+=-----------------------------------------------------
+*/
+
+
+
+
+/* 
+# paragraph, description
+font-family: 'Nanum Gothic', sans-serif;
+
+# title
+font-family: 'Raleway', sans-serif; 
+*/
+
+
+/* _demoColorPlateAllPage {
+    color: #00539CFF;
+    color: #ff7878;
+    color: #222;
+    color: #666;
+    nav-color: #00203fff;
+    hovercolor: #adefd1ff;
+    maincolor: #222;
+    bodyBG: #f3f3f3;
+} */
+
+
+
+/* 
+_fontsize {
+    paragraph: 14px;
+    body: 16px;
+    small-title: 17px;
+    title: 20px;
+    Large-text:
+} */
