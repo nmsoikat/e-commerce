@@ -859,7 +859,6 @@
 	}
 	form.subscribe input {
 		height: 40px;
-		width: 79%;
 	}
 	button.subscribe-btn {
 		padding: 8px 14px;
@@ -944,7 +943,7 @@
         width: 249px;
     } */
 	form.subscribe input {
-		width: 69%;
+		width: 67%;
 	}
 	.review-title h2,
 	.title-area h2,
