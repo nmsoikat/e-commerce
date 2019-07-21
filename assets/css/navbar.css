@@ -38,7 +38,6 @@ nav.main-menu {
     margin-top: -5px;
     margin-bottom: 30px;
 }
-
 .navbar-brand {
     color: #fff;
     display: none;
@@ -79,17 +78,9 @@ nav.main-menu {
 .navbar-toggle .icon-bar {
     width: 32px;
     height: 4px;
-    -webkit-transition:all 0.2s ease 0s;
-    -moz-transition:all 0.2s ease 0s;
-    -ms-transition:all 0.2s ease 0s;
-    -o-transition:all 0.2s ease 0s;
     transition:all 0.2s ease 0s;
 }
 .navbar-toggle .top-bar {
-    -moz-transform:rotate(45deg);
-    -webkit-transform:rotate(45deg);
-    -o-transform:rotate(45deg);
-    -ms-transform:rotate(45deg);
     transform:rotate(45deg);
     transform-origin: 10% 10%;
 }
@@ -97,28 +88,16 @@ nav.main-menu {
     opacity: 0;
 }
 .navbar-toggle .bottom-bar {
-    -moz-transform:rotate(-45deg);
-    -webkit-transform:rotate(-45deg);
-    -o-transform:rotate(-45deg);
-    -ms-transform:rotate(-45deg);
     transform:rotate(-45deg);
     transform-origin: 10% 90%;
 }
 .navbar-toggle.collapsed .top-bar {
-    -moz-transform:rotate(0);
-    -webkit-transform:rotate(0);
-    -o-transform:rotate(0);
-    -ms-transform:rotate(0);
     transform:rotate(0);
 }
 .navbar-toggle.collapsed .middle-bar {
     opacity: 1;
 }
 .navbar-toggle.collapsed .bottom-bar {
-    -moz-transform:rotate(0);
-    -webkit-transform:rotate(0);
-    -o-transform:rotate(0);
-    -ms-transform:rotate(0);
     transform:rotate(0);
 }
 
@@ -157,11 +136,9 @@ nav.main-menu {
 .my-sticky-nav .navbar-nav li a.active {
     color:#222;
 }
-
 .my-sticky-nav .main-menu .navbar-nav li a {
     color: #fff;
 }
-
 .submenu li a:hover,
 .submenu li a.active{
     color: rgb(226, 221, 221);
@@ -238,4 +215,8 @@ nav.main-menu {
 .mega-menu-item.banner-image {
     width: 269px;
     height: 236px;
+}
+.my-sticky-nav  .main-menu .navbar-nav li.open>a{
+    color: #222;
+    background-color: #adefd1ff;
 }
