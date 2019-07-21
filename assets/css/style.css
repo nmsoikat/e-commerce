@@ -1256,7 +1256,7 @@ form.subscribe {
 form.subscribe input {
     font-family: 'Raleway', sans-serif;
     height: 50px;
-    width: 72%;
+    width: 70%;
     border-radius: 0px 5px 5px 0px;
     outline: none;
     border: 1px solid #e0e0e0;
