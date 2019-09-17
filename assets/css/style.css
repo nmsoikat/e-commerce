@@ -1278,6 +1278,12 @@ button.subscribe-btn {
 /* ------------------------------------------------------- *\
    9. Footer  area
 \* ------------------------------------------------------- */
+
+.list-inline>li {
+    float: left;
+}
+
+
 footer {
     background-color: #01162a;
     padding: 30px 0px;
